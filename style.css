@@ -1,0 +1,191 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #002339;
+    color: #fff;
+  
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+   
+    
+    
+}
+
+
+.display {
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+
+
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+
+}
+
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;}
+
+
+
+.container button:active{
+    transform: scale(0.98);
+}
+
+
+
+  #copied-text {
+   position: absolute;
+   right:52%;
+   top:500x;
+   background-color: #fff;
+   color: black;
+   width: 100px;
+   border-radius: 5px;
+   margin: 10px 20px;
+   text-align: center;
+   font-size: 15px;
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+   font-weight: 530;
+  }
+
+  #copied-text::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 14px 14px 0;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: 10px;
+    left: -12px;
+    transition: all 1s ease-in;
+
+
+  }
+
+ @media (max-width:645px) {
+    .display {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+    }
+    .display input {
+        font-size: 18px;
+        margin-right: 0;
+        margin:18px 0;
+        width: 100%;
+        
+    }
+ 
+    .display img{
+        width: 24px;
+        position: absolute;
+        
+
+    }
+    #copied-text {
+        right: 10%;
+    }
+}
+
+
+
+<!-- HTML !-->
+<button class="button-52" role="button">Button 52</button>
+
+/* CSS */
+.button {
+    
+  font-size: 16px;
+  font-weight:200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:after {
+  content: "";
+  background-color: #019f55;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}
